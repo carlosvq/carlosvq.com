@@ -18,6 +18,7 @@ const skills = [
   "SQL",
   "Python",
   "Django",
+  "Celery",
   "Flask",
   "Amazon Web Services",
   "Digital Ocean",

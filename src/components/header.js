@@ -90,12 +90,12 @@ const Shape = styled.img`
   z-index: -1;
   right: 0;
 
-  @media (max-width: 1280px) {
-    max-width: 70%;
+  @media (max-width: 1440px) {
+    max-width: 55%;
   }
 
   @media (max-width: 1024px) {
-    max-width: 65%;
+    max-width: 50%;
   }
 
   @media (max-width: 768px) {
@@ -119,13 +119,13 @@ const Header = () => {
               <Link to="#">projects</Link>
             </li>
             <li>
-              <Link to="#">blog</Link>
+              <a href="https://b.nadle.io/carlos">blog</a>
             </li>
           </LeftMenu>
 
           <RightMenu>
             <li>
-              <Link to="#">contact</Link>
+              <a href="mailto:carlos@carlosvq.com">contact</a>
             </li>
           </RightMenu>
         </Wrapper>
