@@ -113,13 +113,10 @@ const Header = () => {
 
           <LeftMenu>
             <li>
-              <Link to="#">about me</Link>
-            </li>
-            <li>
               <Link to="#">projects</Link>
             </li>
             <li>
-              <a href="https://b.nadle.io/carlos">blog</a>
+              <a href="https://nadle.io/b/carlos">blog</a>
             </li>
           </LeftMenu>
 

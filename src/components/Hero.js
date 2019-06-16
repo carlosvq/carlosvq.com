@@ -16,12 +16,14 @@ const skills = [
   "GraphQL",
   "Webpack",
   "SQL",
+  "Prisma",
   "Python",
   "Django",
   "Celery",
   "Flask",
   "Amazon Web Services",
   "Digital Ocean",
+  "Docker",
 ]
 
 const Wrapper = styled.div`
@@ -44,10 +46,14 @@ const IconContainer = styled.div`
   justify-content: space-between;
   width: 200px;
 
-  svg {
-    max-width: 20px;
-    max-height: 20px;
-    cursor: pointer;
+  a {
+    text-decoration: none;
+
+    svg {
+      max-width: 20px;
+      max-height: 20px;
+      cursor: pointer;
+    }
   }
 `
 
@@ -111,11 +117,25 @@ const Hero = () => {
     <Wrapper>
       <div className="content">
         <IconContainer>
-          <Linkedin />
-          <Github />
-          <Dribbble />
-          <Nadle />
-          <Twitter />
+          <a href="https://linkedin.com/in/carlosvq">
+            <Linkedin />
+          </a>
+
+          <a href="https://github.com/carlosvq">
+            <Github />
+          </a>
+
+          <a href="https://dribbble.com/carlosvq">
+            <Dribbble />
+          </a>
+
+          <a href="https://nadle.io/p/carlosvq">
+            <Nadle />
+          </a>
+
+          <a href="https://twitter.com/carlosvq_">
+            <Twitter />
+          </a>
         </IconContainer>
 
         <Title>
@@ -124,9 +144,8 @@ const Hero = () => {
         </Title>
 
         <Content>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo
-          consectetur, accumsan lorem et, dapibus lacus. Nam id pellentesque
-          nisi, vestibulum cursus velit.
+          Passionate about Technology, Design and Sports. I'm also active in the
+          open source community.
         </Content>
 
         <Skills>
