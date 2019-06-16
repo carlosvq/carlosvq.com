@@ -117,6 +117,10 @@ const Hero = () => {
     <Wrapper>
       <div className="content">
         <IconContainer>
+          <a href="https://nadle.io/p/carlos">
+            <Nadle />
+          </a>
+
           <a href="https://linkedin.com/in/carlosvq">
             <Linkedin />
           </a>
@@ -127,10 +131,6 @@ const Hero = () => {
 
           <a href="https://dribbble.com/carlosvq">
             <Dribbble />
-          </a>
-
-          <a href="https://nadle.io/p/carlos">
-            <Nadle />
           </a>
 
           <a href="https://twitter.com/carlosvq_">
