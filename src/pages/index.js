@@ -7,7 +7,6 @@ import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Container from "../components/Container"
 
-import Projects from "../components/Projects"
 import OpenSource from "../components/OpenSource"
 
 const IndexPage = () => (

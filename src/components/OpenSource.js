@@ -15,19 +15,6 @@ const Wrapper = styled.div`
   }
 `
 
-const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-
-  svg {
-    max-width: 20px;
-    max-height: 20px;
-    cursor: pointer;
-  }
-`
-
 const Title = styled.h1`
   color: ${props => props.theme.colors.black};
   font-size: ${props => props.theme.unit.getRem(36)};
@@ -107,7 +94,7 @@ const OpenSource = () => {
             </span>
           </div>
 
-          <img src={NODEJS} className="featured-image" />
+          <img src={NODEJS} alt="nodejs" className="featured-image" />
 
           <div className="description">
             Node.js is a JavaScript runtime built on Chrome's V8 JavaScript

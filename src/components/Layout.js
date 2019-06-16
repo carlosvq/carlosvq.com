@@ -1,10 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
+import Helmet from "react-helmet"
 
 import CircularStdBold from "../fonts/CircularStd-Bold.woff"
 import CircularStdMedium from "../fonts/CircularStd-Medium.woff"
 import CircularStdBook from "../fonts/CircularStd-Book.woff"
+
+import favicon from "../images/icon.png"
 
 import theme from "../theme"
 
@@ -63,6 +66,23 @@ const GlobalStyle = createGlobalStyle`
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
+      <Helmet
+        link={[
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "16x16",
+            href: `${favicon}`,
+          },
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: `${favicon}`,
+          },
+          { rel: "shortcut icon", type: "image/png", href: `${favicon}` },
+        ]}
+      />
       <GlobalStyle />
       <div className="overflow">{children}</div>
     </React.Fragment>

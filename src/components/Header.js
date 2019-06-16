@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Container from "./Container"
@@ -113,7 +112,7 @@ const Header = () => {
 
           <LeftMenu>
             <li>
-              <Link to="https://nadle.io/p/carlos">projects</Link>
+              <a href="https://nadle.io/p/carlos">projects</a>
             </li>
             <li>
               <a href="https://nadle.io/b/carlos">blog</a>
