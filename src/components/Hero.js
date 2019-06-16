@@ -129,7 +129,7 @@ const Hero = () => {
             <Dribbble />
           </a>
 
-          <a href="https://nadle.io/p/carlosvq">
+          <a href="https://nadle.io/p/carlos">
             <Nadle />
           </a>
 
