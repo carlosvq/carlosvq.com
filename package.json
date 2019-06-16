@@ -36,7 +36,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "now-build": "gatsby build"
+    "now-build": "gatsby build",
+    "now": "./node_modules/.bin/now"
   },
   "repository": {
     "type": "git",

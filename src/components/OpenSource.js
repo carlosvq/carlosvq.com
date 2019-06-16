@@ -38,7 +38,7 @@ const Title = styled.h1`
 
 const ProjectsContainer = styled.div`
   display: grid;
-  grid-gap: 56px 40px;
+  grid-gap: 40px;
   justify-content: space-between;
   grid-template-columns: repeat(auto-fit, minmax(auto, 454px));
 `
