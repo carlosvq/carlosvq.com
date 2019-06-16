@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import NODEJS from "../images/nodejs.png"
+import WEBPACK from "../images/webpack.png"
 
 const Wrapper = styled.div`
   display: grid;
@@ -99,6 +100,23 @@ const OpenSource = () => {
           <div className="description">
             Node.js is a JavaScript runtime built on Chrome's V8 JavaScript
             engine.
+          </div>
+        </Project>
+
+        <Project>
+          <div className="title">
+            <h3>Webpack</h3>
+            <span style={{ margin: "0 8px" }}>•</span>
+            <span>
+              <a href="https://github.com/webpack">github.com/webpack</a>
+            </span>
+          </div>
+
+          <img src={WEBPACK} alt="webpack" className="featured-image" />
+
+          <div className="description">
+            At its core, webpack is a static module bundler for modern
+            JavaScript applications.
           </div>
         </Project>
       </ProjectsContainer>
