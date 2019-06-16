@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "dependencies": {
+    "@now/static-build": "^0.5.8",
     "gatsby": "^2.8.6",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -14,6 +15,7 @@
     "gatsby-source-filesystem": "^2.0.38",
     "gatsby-transformer-sharp": "^2.1.21",
     "lodash": "^4.17.11",
+    "now": "^15.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -33,7 +35,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "now-build": "gatsby build"
   },
   "repository": {
     "type": "git",
