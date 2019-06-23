@@ -15,14 +15,16 @@ const skills = [
   "React",
   "GraphQL",
   "Webpack",
+  "D3.js",
+  "Webpack",
+  "GSAP",
   "SQL",
   "Prisma",
   "Python",
-  "Django",
-  "Celery",
   "Flask",
   "Amazon Web Services",
   "Digital Ocean",
+  "Firebase",
   "Docker",
 ]
 
