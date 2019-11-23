@@ -20,8 +20,6 @@ const skills = [
   "GSAP",
   "SQL",
   "Prisma",
-  "Python",
-  "Flask",
   "Amazon Web Services",
   "Digital Ocean",
   "Firebase",
@@ -142,7 +140,7 @@ const Hero = () => {
 
         <Title>
           Hi! I'm Carlos.{" "}
-          <span>Python and Javascript full-stack Software Engineer.</span>
+          <span>Javascript full-stack Software Engineer.</span>
         </Title>
 
         <Content>
