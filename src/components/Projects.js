@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import PROJECT_IMAGE from "../images/project-example.jpg"
+import PETTED from "../images/petted.svg"
+import SHUTTLEPAD from "../images/shuttlepad.svg"
 
 const Wrapper = styled.div`
   display: grid;
@@ -12,19 +13,6 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: auto;
     margin: 32px 0;
-  }
-`
-
-const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-
-  svg {
-    max-width: 20px;
-    max-height: 20px;
-    cursor: pointer;
   }
 `
 
@@ -78,9 +66,12 @@ const Project = styled.div`
   }
 
   .featured-image {
-    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: image;
-    max-width: 144px;
+    width: 144px;
+    border-radius: 8px;
   }
 
   .description {
@@ -90,6 +81,13 @@ const Project = styled.div`
     max-width: 280px;
     margin-left: 8px;
   }
+`
+
+const Icon = styled.img`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40px;
 `
 
 const Projects = () => {
@@ -107,24 +105,9 @@ const Projects = () => {
             </span>
           </div>
 
-          <img src={PROJECT_IMAGE} className="featured-image" />
-
-          <div className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo
-            consectetur, accumsan lorem et, dapibus lacus.
+          <div className="featured-image" style={{ backgroundColor: "#000" }}>
+            <Icon src={SHUTTLEPAD} />
           </div>
-        </Project>
-
-        <Project>
-          <div className="title">
-            <h3>Nadle</h3>
-            <span style={{ margin: "0 8px" }}>•</span>
-            <span>
-              <a href="https://nadle.io">nadle.io</a>
-            </span>
-          </div>
-
-          <img src={PROJECT_IMAGE} className="featured-image" />
 
           <div className="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo
@@ -141,7 +124,12 @@ const Projects = () => {
             </span>
           </div>
 
-          <img src={PROJECT_IMAGE} className="featured-image" />
+          <div
+            className="featured-image"
+            style={{ backgroundColor: "#f6f6f6" }}
+          >
+            <Icon src={PETTED} />
+          </div>
 
           <div className="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo

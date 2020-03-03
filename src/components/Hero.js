@@ -4,20 +4,25 @@ import styled from "styled-components"
 import Linkedin from "../images/icons/linkedin.inline.svg"
 import Github from "../images/icons/github.inline.svg"
 import Dribbble from "../images/icons/dribbble.inline.svg"
-import Nadle from "../images/icons/nadle.inline.svg"
 import Twitter from "../images/icons/twitter.inline.svg"
 
 import PROFILE from "../images/profile.jpg"
 
 const skills = [
+  "CSS",
+  "BEM",
+  "SASS",
   "Javascript",
   "Node",
   "React",
+  "Jest",
+  "Cypress",
   "GraphQL",
   "Webpack",
   "D3.js",
   "Webpack",
   "GSAP",
+  "MongoDB",
   "SQL",
   "Prisma",
   "Amazon Web Services",
@@ -117,10 +122,6 @@ const Hero = () => {
     <Wrapper>
       <div className="content">
         <IconContainer>
-          <a href="https://nadle.io/p/carlos">
-            <Nadle />
-          </a>
-
           <a href="https://linkedin.com/in/carlosvq">
             <Linkedin />
           </a>
@@ -139,8 +140,7 @@ const Hero = () => {
         </IconContainer>
 
         <Title>
-          Hi! I'm Carlos.{" "}
-          <span>Javascript full-stack Software Engineer.</span>
+          Hi! I'm Carlos. <span>Javascript full-stack Software Engineer.</span>
         </Title>
 
         <Content>
