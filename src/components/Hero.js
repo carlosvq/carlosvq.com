@@ -72,6 +72,7 @@ const Title = styled.h1`
 
   span {
     display: block;
+    font-size: ${props => props.theme.unit.getRem(32)};
   }
 
   @media (max-width: 768px) {
@@ -140,7 +141,8 @@ const Hero = () => {
         </IconContainer>
 
         <Title>
-          Hi! I'm Carlos. <span>Javascript full-stack Software Engineer.</span>
+          Hi! I'm Carlos.{" "}
+          <span>Python and Javascript full-stack software engineer.</span>
         </Title>
 
         <Content>
