@@ -8,15 +8,15 @@ import HEADER_BACKGROUND from "../images/header_background.svg"
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: 30px auto;
+  margin: 32px auto;
   max-width: 100%;
 
   ul {
-    list-style-type: none;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    list-style-type: none;
 
     li {
       font-size: ${props => props.theme.unit.getRem(16)};
@@ -39,19 +39,19 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h1`
+  margin: 0;
+  padding: 0;
   color: ${props => props.theme.colors.black};
   font-size: ${props => props.theme.unit.getRem(30)};
   font-weight: 600;
-  margin: 0;
-  padding: 0;
 `
 
 const LeftMenu = styled.ul`
   flex: 1;
-  margin-left: 50px;
+  margin-left: 48px;
 
   li {
-    margin-left: 20px;
+    margin-left: 16px;
 
     :first-child {
       margin-left: 0;
@@ -73,21 +73,21 @@ const RightMenu = styled.ul`
   @media (max-width: 768px) {
     li {
       padding: 8px 32px;
+      border-radius: 24px;
       background: #8e2de2;
       background: linear-gradient(
         to right,
         ${props => props.theme.colors.primary},
         ${props => props.theme.colors.secondary}
       );
-      border-radius: 24px;
     }
   }
 `
 
 const Shape = styled.img`
   position: absolute;
-  z-index: -1;
   right: 0;
+  z-index: -1;
 
   @media (max-width: 1440px) {
     max-width: 55%;

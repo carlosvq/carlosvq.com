@@ -7,8 +7,6 @@ import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Container from "../components/Container"
 
-import Projects from "../components/Projects"
-
 const IndexPage = () => (
   <Layout>
     <SEO title="CarlosVQ - Carlos E. Valdez Quintín" />

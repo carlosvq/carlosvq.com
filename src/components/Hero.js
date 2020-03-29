@@ -35,20 +35,20 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: flex-start;
-  max-width: 820px;
-  margin-top: 96px;
   grid-gap: 32px;
+  margin-top: 96px;
+  max-width: 820px;
 
   @media (max-width: 768px) {
-    grid-template-columns: auto;
     margin-top: 0;
+    grid-template-columns: auto;
   }
 `
 
 const IconContainer = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 200px;
 
   a {
@@ -63,11 +63,11 @@ const IconContainer = styled.div`
 `
 
 const Title = styled.h1`
+  margin: 32px 0 0 0;
+  padding: 0;
   color: ${props => props.theme.colors.black};
   font-size: ${props => props.theme.unit.getRem(36)};
   font-weight: 600;
-  margin: 32px 0 0 0;
-  padding: 0;
   max-width: 520px;
 
   span {
@@ -85,10 +85,10 @@ const Title = styled.h1`
 `
 
 const Content = styled.div`
-  font-size: ${props => props.theme.unit.getRem(16)};
-  line-height: 1.5;
   margin: 16px 0 0 0;
   max-width: 520px;
+  font-size: ${props => props.theme.unit.getRem(16)};
+  line-height: 1.5;
 `
 
 const Profile = styled.img`
@@ -102,20 +102,15 @@ const Profile = styled.img`
   }
 `
 
-const Skills = styled.div`
-  .tags {
-  }
-`
-
 const Tag = styled.div`
-  background-color: #6f4a9e20;
-  border-radius: 8px;
-  color: ${props => props.theme.colors.primary};
   display: inline-flex;
-  font-size: ${props => props.theme.unit.getRem(16)};
-  font-weight: 400;
   margin: 0 16px 16px 0;
   padding: 8px;
+  border-radius: 8px;
+  background-color: #6f4a9e20;
+  color: ${props => props.theme.colors.primary};
+  font-size: ${props => props.theme.unit.getRem(16)};
+  font-weight: 400;
 `
 
 const Hero = () => {
@@ -150,7 +145,7 @@ const Hero = () => {
           open source community.
         </Content>
 
-        <Skills>
+        <div>
           <h3 style={{ fontSize: "24px", fontWeight: 400 }}>Skills</h3>
 
           <div className="tags">
@@ -158,7 +153,7 @@ const Hero = () => {
               <Tag key={index}>{skill}</Tag>
             ))}
           </div>
-        </Skills>
+        </div>
       </div>
 
       <Profile src={PROFILE} />
