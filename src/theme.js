@@ -9,13 +9,13 @@ const theme = {
     green: "#12cb87",
     white: "#ffffff",
     hover: {
-      primary: "#2D84FC",
-      green: "#48D69F",
-      darkGreen: "#00C57A",
+      primary: "#2d84fc",
+      green: "#48d69f",
+      darkGreen: "#00c57a",
     },
     focus: {
-      primary: "#0052C3",
-      green: "#009A5F",
+      primary: "#0052c3",
+      green: "#009a5f",
     },
   },
   unit: {

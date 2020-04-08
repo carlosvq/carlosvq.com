@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Container from "./Container"
@@ -19,7 +20,7 @@ const Wrapper = styled.div`
     list-style-type: none;
 
     li {
-      font-size: ${props => props.theme.unit.getRem(16)};
+      font-size: ${(props) => props.theme.unit.getRem(16)};
       font-weight: 400;
 
       a {
@@ -41,8 +42,8 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   margin: 0;
   padding: 0;
-  color: ${props => props.theme.colors.black};
-  font-size: ${props => props.theme.unit.getRem(30)};
+  color: ${(props) => props.theme.colors.black};
+  font-size: ${(props) => props.theme.unit.getRem(30)};
   font-weight: 600;
 `
 
@@ -58,7 +59,7 @@ const LeftMenu = styled.ul`
     }
 
     a {
-      color: ${props => props.theme.colors.black};
+      color: ${(props) => props.theme.colors.black};
     }
   }
 `
@@ -66,7 +67,7 @@ const LeftMenu = styled.ul`
 const RightMenu = styled.ul`
   li {
     a {
-      color: ${props => props.theme.colors.white};
+      color: ${(props) => props.theme.colors.white};
     }
   }
 
@@ -77,8 +78,8 @@ const RightMenu = styled.ul`
       background: #8e2de2;
       background: linear-gradient(
         to right,
-        ${props => props.theme.colors.primary},
-        ${props => props.theme.colors.secondary}
+        ${(props) => props.theme.colors.primary},
+        ${(props) => props.theme.colors.secondary}
       );
     }
   }
@@ -112,7 +113,10 @@ const Header = () => {
 
           <LeftMenu>
             <li>
-              <a href="https://nadle.io/b/carlos">blog</a>
+              <Link to="/about-me">about me</Link>
+            </li>
+            <li>
+              <Link to="/blog">blog</Link>
             </li>
           </LeftMenu>
 

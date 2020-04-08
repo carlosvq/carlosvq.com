@@ -9,7 +9,7 @@ import Container from "../components/Container"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="CarlosVQ - Carlos E. Valdez Quintín" />
+    <SEO title="Carlos E. Valdez Quintin" />
     <Header />
 
     <Container>

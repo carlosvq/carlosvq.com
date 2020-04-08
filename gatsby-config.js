@@ -1,28 +1,36 @@
 module.exports = {
   siteMetadata: {
-    title: `CarlosVQ`,
-    description: `JavaScript, Node.js and Python. Passionate about Technology, Design and Sports.`,
-    author: `@carlosvq`,
+    title: "CarlosVQ",
+    description: "Python and Javascript full-stack software engineer.",
+    author: "@carlosvq",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
+        name: "images",
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "carlosvq-site",
+        short_name: "carlosvq",
+        start_url: "/",
+        background_color: "#663399",
+        theme_color: "#663399",
       },
     },
     {
