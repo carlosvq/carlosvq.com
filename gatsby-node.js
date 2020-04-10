@@ -1,7 +1,9 @@
 const createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     query {
-      blog: allMdx(filter: { fileAbsolutePath: { regex: "//posts//" } }) {
+      blog: allMdx(
+        filter: { fileAbsolutePath: { regex: "//content/posts//" } }
+      ) {
         nodes {
           frontmatter {
             slug
@@ -30,5 +32,4 @@ const createPages = async ({ actions, graphql, reporter }) => {
 
 module.exports = {
   createPages,
-  onCreateNode,
 }
