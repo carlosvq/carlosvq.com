@@ -12,7 +12,6 @@ const skills = [
   "CSS",
   "BEM",
   "SASS",
-  "Javascript",
   "Node",
   "React",
   "Jest",
@@ -25,9 +24,10 @@ const skills = [
   "MongoDB",
   "SQL",
   "Prisma",
-  "Amazon Web Services",
-  "Digital Ocean",
   "Firebase",
+  "Amazon Web Services",
+  "Flask",
+  "Celery",
   "Docker",
 ]
 
@@ -65,18 +65,18 @@ const IconContainer = styled.div`
 const Title = styled.h1`
   margin: 32px 0 0 0;
   padding: 0;
-  color: ${props => props.theme.colors.black};
-  font-size: ${props => props.theme.unit.getRem(36)};
+  color: ${(props) => props.theme.colors.black};
+  font-size: ${(props) => props.theme.unit.getRem(36)};
   font-weight: 600;
   max-width: 520px;
 
   span {
     display: block;
-    font-size: ${props => props.theme.unit.getRem(32)};
+    font-size: ${(props) => props.theme.unit.getRem(32)};
   }
 
   @media (max-width: 768px) {
-    font-size: ${props => props.theme.unit.getRem(24)};
+    font-size: ${(props) => props.theme.unit.getRem(24)};
 
     span {
       font-weight: 400;
@@ -87,7 +87,7 @@ const Title = styled.h1`
 const Content = styled.div`
   margin: 16px 0 0 0;
   max-width: 520px;
-  font-size: ${props => props.theme.unit.getRem(16)};
+  font-size: ${(props) => props.theme.unit.getRem(16)};
   line-height: 1.5;
 `
 
@@ -108,8 +108,8 @@ const Tag = styled.div`
   padding: 8px;
   border-radius: 8px;
   background-color: #6f4a9e20;
-  color: ${props => props.theme.colors.primary};
-  font-size: ${props => props.theme.unit.getRem(16)};
+  color: ${(props) => props.theme.colors.primary};
+  font-size: ${(props) => props.theme.unit.getRem(16)};
   font-weight: 400;
 `
 
