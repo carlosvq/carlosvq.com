@@ -19,7 +19,6 @@ const skills = [
   "GraphQL",
   "Webpack",
   "D3.js",
-  "Webpack",
   "GSAP",
   "MongoDB",
   "SQL",
